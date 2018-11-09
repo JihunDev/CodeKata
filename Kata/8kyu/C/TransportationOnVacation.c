@@ -27,11 +27,11 @@ Test(Sample_Test, should_return_the_cost_for_rental)
 /* d - the days to rent */
 unsigned rental_car_cost(unsigned d)
 {
-    if(d <= 3) {
+    if(d < 3) {
       return (d * 40);
-    } else if(d > 3 && d <= 6) {
+    } else if(d >= 3 && d <= 6) {
       return (d * 40) - 20;
-    } else if(d > 7) {
+    } else if(d >= 7) {
       return (d * 40) - 50;
     }
 }
