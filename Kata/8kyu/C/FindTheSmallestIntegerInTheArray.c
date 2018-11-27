@@ -1,0 +1,39 @@
+/*
+    Instruction
+
+    Given an array of integers your solution should find the smallest integer.
+
+    For example:
+
+    Given [34, 15, 88, 2] your solution will return 2
+    Given [34, -345, -1, 100] your solution will return -345
+    You can assume, for the purpose of this kata, that the supplied array will not be empty.
+*/
+
+/*
+    Sample Tests
+
+    #include <criterion/criterion.h>
+
+    int find_smallest_int(const int *vec, size_t len);
+
+    Test(Sample_Test, should_return_the_smallest_integer)
+    {
+        cr_assert_eq(find_smallest_int((int[]){34, 15, 88, 2}, 4), 2);
+        cr_assert_eq(find_smallest_int((int[]){34, -345, -1, 100}, 4), -345);
+        cr_assert_eq(find_smallest_int((int[]){78, 56, 232, 12, 11, 43}, 6), 11);
+    }
+*/
+
+#include <stddef.h>
+
+int find_smallest_int(int *vec, size_t len)
+{
+   int result= vec[0];
+   for(int i = 1; i < len; i++) {
+      if(result > vec[i]) {
+        result = vec[i];
+      }
+   }
+   return result;
+}
