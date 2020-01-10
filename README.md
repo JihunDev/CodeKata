@@ -1,10 +1,9 @@
-# Codewars
+# Code Kata
 
-CodeWars 문제 풀이
+## CodeWars
+https://www.codewars.com/
 
-
-
-## Profile
+### Profile
 ![Codewars Rank](https://www.codewars.com/users/JihunDev/badges/large)
 
 
